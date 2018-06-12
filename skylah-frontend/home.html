@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SKYLAH - An AI Chatbot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/grayscale.css">
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+
+    <script src="https://cdn.ckeditor.com/4.7.2/standard/ckeditor.js"></script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">SKYLAH</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="container">
+                <div class="span3 well">
+                    <center>
+                    <a href="#profileModal" data-toggle="modal" data-target="#profileModal"><img src="img/profile.jpg" name="aboutme" width="50" height="50" class="img-circle"></a>
+                    </center>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">SKYLAH</h1>
+                <a href="#" class="btn btn-lg btn-default">Chat with Skylah</a>
+                <a href="#messageModal" class="btn btn-lg btn-default-reverse" data-toggle="modal" data-target="#messageModal">Message Admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Profile</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="img/profile.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">Eshban Suleman <small>Pakistan</small></h3>
+                    <span><strong>Personality Traits: </strong></span>
+                        <span class="label label-warning">lorem</span>
+                        <span class="label label-info">ipsum</span>
+                        <span class="label label-info">dolor</span>
+                        <span class="label label-success">sit</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
+                    <a href="signout.html" class="btn btn-default-reverse">Sign-out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--Message Admin Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <form>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Message</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        
+      <div class="form-group">
+        <label>To</label>
+        <input type="text" class="form-control" placeholder="@Admin"></input>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="editor1" class="form-control" placeholder="Your Message"></textarea>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Send Anonymously
+        </label>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="Submit" class="btn btn-default-reverse">Send</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; SKYLAH 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+    <script type="js/chat.js"></script>
+
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
+  <script type="text/javascript" src="js/chat.js"></script>
+
+  </body>
+
+</html>
